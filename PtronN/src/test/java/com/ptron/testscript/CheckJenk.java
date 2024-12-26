@@ -11,7 +11,7 @@ public class CheckJenk {
 	{
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("https://www.instagram.com");
+		driver.get("https://www.naukri.com");
 		System.out.println(driver.getTitle());
 		driver.quit();
 		Reporter.log("success",true);

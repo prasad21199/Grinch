@@ -5,12 +5,12 @@
       <![CDATA[success]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-12-26T12:11:23 IST" name="Suite" finished-at="2024-12-26T12:11:26 IST" duration-ms="3179">
+  <suite started-at="2024-12-26T12:46:36 IST" name="Suite" finished-at="2024-12-26T12:46:40 IST" duration-ms="4519">
     <groups>
     </groups>
-    <test started-at="2024-12-26T12:11:23 IST" name="Test" finished-at="2024-12-26T12:11:26 IST" duration-ms="3179">
+    <test started-at="2024-12-26T12:46:36 IST" name="Test" finished-at="2024-12-26T12:46:40 IST" duration-ms="4519">
       <class name="com.ptron.testscript.CheckJenk">
-        <test-method signature="jenk()[pri:0, instance:com.ptron.testscript.CheckJenk@3e694b3f]" started-at="2024-12-26T12:11:23 IST" name="jenk" finished-at="2024-12-26T12:11:26 IST" duration-ms="3129" status="PASS">
+        <test-method signature="jenk()[pri:0, instance:com.ptron.testscript.CheckJenk@202b0582]" started-at="2024-12-26T12:46:36 IST" name="jenk" finished-at="2024-12-26T12:46:40 IST" duration-ms="4481" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[success]]>
