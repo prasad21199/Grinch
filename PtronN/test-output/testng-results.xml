@@ -2,44 +2,22 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[CreateCampaign.createCampagin()[pri:0, instance:com.ptron.testscript.CreateCampaign@6f03482] has been started ]]>
-    </line>
-    <line>
-      <![CDATA[CreateCampaign.createCampagin()[pri:0, instance:com.ptron.testscript.CreateCampaign@6f03482] has been success ]]>
+      <![CDATA[success]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-12-26T10:56:28 IST" name="Suite" finished-at="2024-12-26T10:57:09 IST" duration-ms="40810">
+  <suite started-at="2024-12-26T12:11:23 IST" name="Suite" finished-at="2024-12-26T12:11:26 IST" duration-ms="3179">
     <groups>
     </groups>
-    <test started-at="2024-12-26T10:56:28 IST" name="Test" finished-at="2024-12-26T10:57:09 IST" duration-ms="40810">
-      <class name="com.ptron.testscript.CreateCampaign">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.ptron.testscript.CreateCampaign@6f03482]" started-at="2024-12-26T10:56:29 IST" name="openBrowser" finished-at="2024-12-26T10:56:40 IST" duration-ms="11687" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.ptron.testscript.CreateCampaign@6f03482]" started-at="2024-12-26T10:56:40 IST" name="login" finished-at="2024-12-26T10:56:51 IST" duration-ms="10356" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="createCampagin()[pri:0, instance:com.ptron.testscript.CreateCampaign@6f03482]" started-at="2024-12-26T10:56:51 IST" name="createCampagin" finished-at="2024-12-26T10:57:08 IST" duration-ms="17367" status="PASS">
+    <test started-at="2024-12-26T12:11:23 IST" name="Test" finished-at="2024-12-26T12:11:26 IST" duration-ms="3179">
+      <class name="com.ptron.testscript.CheckJenk">
+        <test-method signature="jenk()[pri:0, instance:com.ptron.testscript.CheckJenk@3e694b3f]" started-at="2024-12-26T12:11:23 IST" name="jenk" finished-at="2024-12-26T12:11:26 IST" duration-ms="3129" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[CreateCampaign.createCampagin()[pri:0, instance:com.ptron.testscript.CreateCampaign@6f03482] has been started ]]>
-            </line>
-            <line>
-              <![CDATA[CreateCampaign.createCampagin()[pri:0, instance:com.ptron.testscript.CreateCampaign@6f03482] has been success ]]>
+              <![CDATA[success]]>
             </line>
           </reporter-output>
-        </test-method> <!-- createCampagin -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:com.ptron.testscript.CreateCampaign@6f03482]" started-at="2024-12-26T10:57:08 IST" name="logout" finished-at="2024-12-26T10:57:08 IST" duration-ms="432" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.ptron.testscript.CreateCampaign@6f03482]" started-at="2024-12-26T10:57:08 IST" name="closeBrowser" finished-at="2024-12-26T10:57:09 IST" duration-ms="870" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- com.ptron.testscript.CreateCampaign -->
+        </test-method> <!-- jenk -->
+      </class> <!-- com.ptron.testscript.CheckJenk -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
