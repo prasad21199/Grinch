@@ -18,6 +18,7 @@ import com.ptron.pom.AccountPage;
 import com.ptron.pom.ContactPage;
 import com.ptron.pom.HomePage;
 import com.ptron.pom.LoginPage;
+import com.ptron.pom.PurchaseOrderPage;
 
 public class BaseClass {
 	public  WebDriver driver;
@@ -26,6 +27,7 @@ public class BaseClass {
 	public  HomePage hp;
 	public ContactPage cp;
 	public AccountPage ap;
+	public PurchaseOrderPage po;
 	@BeforeTest
 	public void openBrowser() throws IOException
 	{
@@ -35,6 +37,7 @@ public class BaseClass {
 		hp = new HomePage(driver);
 		cp = new ContactPage(driver);
 		ap = new AccountPage(driver);
+		po = new PurchaseOrderPage(driver);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get(url);

@@ -32,6 +32,8 @@ public class HomePage {
 	private WebElement purchaseOrderLink;
 	@FindBy(linkText = "Invoices")
 	private WebElement invoicesLink;
+	@FindBy(id = "scrollright")
+	private WebElement rightScroolBtn;
 
 	public HomePage(WebDriver driver)
 	{
@@ -68,6 +70,10 @@ public class HomePage {
 
 	public WebElement getProductsLink() {
 		return productsLink;
+	}
+
+	public WebElement getRightScroolBtn() {
+		return rightScroolBtn;
 	}
 
 	public WebElement getPriceBookLink() {
