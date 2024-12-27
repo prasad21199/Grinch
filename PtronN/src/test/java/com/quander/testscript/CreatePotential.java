@@ -1,4 +1,4 @@
-package com.ptron.testscript;
+package com.quander.testscript;
 
 import java.io.IOException;
 import java.util.List;
@@ -11,10 +11,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import com.ptron.generic.BaseClass;
-import com.ptron.pom.PotentialPage;
-@Listeners(com.ptron.generic.ListnerImplementation.class)
-public class CreatePotential extends BaseClass 
+public class CreatePotential extends basecl
 {
 	@Test
 public void createPotential() throws EncryptedDocumentException, IOException, InterruptedException

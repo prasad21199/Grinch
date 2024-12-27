@@ -63,9 +63,4 @@ public class CampaignPage {
 	public WebElement getCampDetails() {
 		return campDetails;
 	}
-
-	
-	
-	
-	
 }

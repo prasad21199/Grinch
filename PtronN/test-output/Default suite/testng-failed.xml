@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ptron.testscript.Camp_Lead">
+      <class name="com.ptron.testscript.CreatePurchaseOrder">
         <methods>
+          <include name="createPurchaseOrder"/>
           <include name="closeBrowser"/>
           <include name="login"/>
           <include name="logout"/>
-          <include name="createCampagin"/>
           <include name="openBrowser"/>
         </methods>
-      </class> <!-- com.ptron.testscript.Camp_Lead -->
+      </class> <!-- com.ptron.testscript.CreatePurchaseOrder -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
