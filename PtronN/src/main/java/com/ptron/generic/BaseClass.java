@@ -17,8 +17,11 @@ import org.testng.annotations.BeforeTest;
 import com.ptron.pom.AccountPage;
 import com.ptron.pom.ContactPage;
 import com.ptron.pom.HomePage;
+import com.ptron.pom.InvoicePage;
 import com.ptron.pom.LoginPage;
+import com.ptron.pom.ProductsPage;
 import com.ptron.pom.PurchaseOrderPage;
+import com.ptron.pom.VendorsPage;
 
 public class BaseClass {
 	public  WebDriver driver;
@@ -28,6 +31,9 @@ public class BaseClass {
 	public ContactPage cp;
 	public AccountPage ap;
 	public PurchaseOrderPage po;
+	public VendorsPage vp;
+	public ProductsPage pp ;
+	public InvoicePage ip;
 	@BeforeTest
 	public void openBrowser() throws IOException
 	{
@@ -38,6 +44,9 @@ public class BaseClass {
 		cp = new ContactPage(driver);
 		ap = new AccountPage(driver);
 		po = new PurchaseOrderPage(driver);
+		vp = new VendorsPage(driver);
+		pp = new ProductsPage(driver);
+		ip = new InvoicePage(driver);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get(url);
