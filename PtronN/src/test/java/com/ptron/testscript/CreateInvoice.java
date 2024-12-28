@@ -6,10 +6,11 @@ import java.util.Set;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.ptron.generic.BaseClass;
-
+@Listeners(com.ptron.generic.ListnerImplementation.class)
 public class CreateInvoice extends BaseClass{
 @Test
 public void createInvoice() throws EncryptedDocumentException, IOException

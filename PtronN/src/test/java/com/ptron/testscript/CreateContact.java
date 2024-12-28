@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 
 import com.ptron.generic.BaseClass;
 
-//@Listeners(com.ptron.generic.ListnerImplementation.class)
+@Listeners(com.ptron.generic.ListnerImplementation.class)
 public class CreateContact extends BaseClass{
 	@Test
 	public void createContact() throws EncryptedDocumentException, IOException

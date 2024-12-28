@@ -5,13 +5,14 @@ import java.util.NoSuchElementException;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.ptron.generic.BaseClass;
 import com.ptron.generic.FileLibrary;
 import com.ptron.pom.CampaignPage;
 import com.ptron.pom.LeadPage;
-
+@Listeners(com.ptron.generic.ListnerImplementation.class)
 public class Camp_Lead extends BaseClass {
 	@Test (priority = 1)
 	public void createCampagin() throws IOException
@@ -86,6 +87,7 @@ public class Camp_Lead extends BaseClass {
 			catch (NoSuchElementException e) {
 				driver.navigate().refresh();
 			}
+			Assert.assertTrue(leadpage.getLeadDetailsPg().getText().contains("Lead Details"));
 		}
 	}
 }

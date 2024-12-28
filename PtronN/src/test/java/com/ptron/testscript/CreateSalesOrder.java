@@ -5,7 +5,8 @@ import java.io.IOException;
 import org.apache.poi.EncryptedDocumentException;
 import org.testng.annotations.Test;
 
-import com.quander.generic.BaseClass;
+import com.ptron.generic.BaseClass;
+
 
 public class CreateSalesOrder extends BaseClass {
 	@Test
@@ -15,7 +16,8 @@ public class CreateSalesOrder extends BaseClass {
 		String pname = fl.getExcelData("salesorder", 1, 2);
 		String qty = fl.getExcelData("salesorder", 1, 3);
 		String lprice = fl.getExcelData("salesorder", 1, 4);
-		for(int i=0;i<30;i++) {
+		for(int i=0;i<30;i++) 
+		{
 			hp.getRightScroolBtn().click();
 		}
 		hp.getSalesOrderLink().click();

@@ -10,14 +10,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.Reporter;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import com.ptron.generic.BaseClass;
 import com.ptron.generic.FileLibrary;
+import com.ptron.generic.*;
 import com.ptron.pom.CampaignPage;
 import com.ptron.pom.LeadPage;
 import com.ptron.pom.PotentialPage;
-
+@Listeners(com.ptron.generic.ListnerImplementation.class)
 public class Camp_Potential extends BaseClass {
 	@Test (priority = 1)
 	public void createCampagin() throws IOException
@@ -149,6 +150,8 @@ public class Camp_Potential extends BaseClass {
 				driver.navigate().refresh();
 			}
 			}
+		Assert.assertTrue(camp.getCampDetails().getText().contains("Campaign Details"));
 		}
+		
 	}
 

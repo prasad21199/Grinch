@@ -1,5 +1,6 @@
 package com.ptron.generic;
 
+
 import java.io.IOException;
 import java.time.Duration;
 import java.util.NoSuchElementException;
@@ -14,17 +15,11 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
-import com.ptron.pom.AccountPage;
-import com.ptron.pom.ContactPage;
-import com.ptron.pom.HomePage;
-import com.ptron.pom.InvoicePage;
-import com.ptron.pom.LoginPage;
-import com.ptron.pom.ProductsPage;
-import com.ptron.pom.PurchaseOrderPage;
-import com.ptron.pom.VendorsPage;
+import com.ptron.generic.FileLibrary;
+import com.ptron.pom.*;
 
 public class BaseClass {
-	public  WebDriver driver;
+	public static WebDriver  driver;
 	public static  FileLibrary fl = new FileLibrary();
 	public  LoginPage lp;
 	public  HomePage hp;
@@ -34,6 +29,10 @@ public class BaseClass {
 	public VendorsPage vp;
 	public ProductsPage pp ;
 	public InvoicePage ip;
+	public SalesOrderPage so;
+	public LeadPage leadpage;
+	public CampaignPage camp;
+	public PricebookPage pbp;
 	@BeforeTest
 	public void openBrowser() throws IOException
 	{
@@ -47,6 +46,10 @@ public class BaseClass {
 		vp = new VendorsPage(driver);
 		pp = new ProductsPage(driver);
 		ip = new InvoicePage(driver);
+		so = new SalesOrderPage(driver);
+		camp = new CampaignPage(driver);
+		leadpage = new LeadPage(driver);
+		pbp = new PricebookPage(driver);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get(url);

@@ -54,6 +54,8 @@ public class LeadPage {
 	private WebElement saveBtnCnvtPot;
 	@FindBy(xpath = "//a[contains(@href,'javascript:if (window.opener && !window.opener.closed && window.opener.pre')]")
 	private WebElement monthBtn;
+	@FindBy(xpath = "//td[contains(text(),'Lead Details')]")
+	private WebElement leadDetailsPg;
 
 	public LeadPage(WebDriver driver)
 	{
@@ -66,6 +68,63 @@ public class LeadPage {
 	public WebElement getMonthBtn() {
 		return monthBtn;
 	}
+	
+
+	public WebElement getPrefixNameDrp() {
+		return prefixNameDrp;
+	}
+
+	public WebElement getFirstNameTbx() {
+		return firstNameTbx;
+	}
+
+	public WebElement getDesgTbx() {
+		return desgTbx;
+	}
+
+	public WebElement getPhoneTbx() {
+		return phoneTbx;
+	}
+
+	public WebElement getMobTbx() {
+		return mobTbx;
+	}
+
+	public WebElement getLeadSourceDrp() {
+		return leadSourceDrp;
+	}
+
+	public WebElement getIndustryDrp() {
+		return industryDrp;
+	}
+
+	public WebElement getActualRevTbx() {
+		return actualRevTbx;
+	}
+
+	public WebElement getCompanyNameTbx() {
+		return companyNameTbx;
+	}
+
+	public WebElement getLastNameTbx() {
+		return lastNameTbx;
+	}
+
+	public WebElement getDescAreaBox() {
+		return descAreaBox;
+	}
+
+	public WebElement getSaveBtn() {
+		return saveBtn;
+	}
+
+	public WebElement getCampaignNameLookUpIcon() {
+		return campaignNameLookUpIcon;
+	}
+
+	public WebElement getLeadDetailsPg() {
+		return leadDetailsPg;
+	}
 
 	public WebElement getYearBack() {
 		return yearBack;
@@ -74,7 +133,6 @@ public class LeadPage {
 	public List<WebElement> getDateSel() {
 		return dateSel;
 	}
-	
 
 	public WebElement getPotStage() {
 		return potStage;
