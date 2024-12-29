@@ -33,6 +33,7 @@ public class BaseClass {
 	public LeadPage leadpage;
 	public CampaignPage camp;
 	public PricebookPage pbp;
+	public QuotesPage qp;
 	@BeforeTest
 	public void openBrowser() throws IOException
 	{
@@ -50,6 +51,7 @@ public class BaseClass {
 		camp = new CampaignPage(driver);
 		leadpage = new LeadPage(driver);
 		pbp = new PricebookPage(driver);
+		qp = new QuotesPage(driver);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get(url);

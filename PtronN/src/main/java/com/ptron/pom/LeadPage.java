@@ -56,12 +56,18 @@ public class LeadPage {
 	private WebElement monthBtn;
 	@FindBy(xpath = "//td[contains(text(),'Lead Details')]")
 	private WebElement leadDetailsPg;
-
+	@FindBy (xpath = "//input[@name='closedate']")
+	private WebElement closeDateTbx;
+	
 	public LeadPage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
 	}
 	
+	public WebElement getCloseDateTbx() {
+		return closeDateTbx;
+	}
+
 	public WebElement getDateLookupIcon() {
 		return dateLookupIcon;
 	}
@@ -158,6 +164,7 @@ public class LeadPage {
 		actualRevTbx.sendKeys(actualRev);
 		companyNameTbx.sendKeys(compName);
 		lastNameTbx.sendKeys(lastName);
+		descAreaBox.sendKeys(desc);
 		saveBtn.click();
 	}
 	public WebElement getNewLeadLink() {

@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Factory;
 
 public class InvoicePage {
 @FindBy(xpath = "//input[@value='New Invoice']")
@@ -37,6 +38,8 @@ private WebElement descTxtArea;
 private WebElement saveBtn;
 @FindBy(xpath  = "//img[@onclick='moveright()']")
 private WebElement onrightClick;
+@FindBy(xpath = "//td[@class='title hline']")
+private WebElement invoiceGetText;
 
 public InvoicePage(WebDriver driver)
 {
@@ -90,6 +93,10 @@ public WebElement getDeletRowProductIcon() {
 
 public WebElement getTermCondTxtArea() {
 	return termCondTxtArea;
+}
+
+public WebElement getInvoiceGetText() {
+	return invoiceGetText;
 }
 
 public WebElement getDescTxtArea() {

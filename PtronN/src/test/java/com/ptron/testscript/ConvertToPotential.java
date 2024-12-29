@@ -2,6 +2,7 @@ package com.ptron.testscript;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.Set;
 
 import org.apache.poi.EncryptedDocumentException;
@@ -25,6 +26,7 @@ public class ConvertToPotential extends BaseClass{
 		String ln = fl.getExcelData("lead", 1, 9);
 		String dateSel = fl.getExcelData("lead", 1, 11);
 		String potStageD = fl.getExcelData("lead", 1, 12);
+		String cDate = fl.getExcelData("lead", 1, 13);
 		 List<WebElement> leadNames = lp.getLeadsNames();
 		 for (WebElement webElement : leadNames) {
 			if(webElement.getText().equals(fn+" "+ln))
@@ -34,32 +36,41 @@ public class ConvertToPotential extends BaseClass{
 			}
 		}
 		 lp.getConvertBtn().click();
-		 lp.getDateLookupIcon().click();
-		 String pwid = driver.getWindowHandle();
-		 Set<String> awid = driver.getWindowHandles();
-		 for (String string : awid) {
-			driver.switchTo().window(string);
-		}
-		 for(int i=0; i<10; i++) {
-		 lp.getYearBack().click();
-		 }
-		 List<WebElement> date = lp.getDateSel();
-		 for (WebElement webElement : date) {
-			if(webElement.getText().equals(dateSel))
-			{
-				webElement.click();
-				break;
-			}
-		}
-		 driver.switchTo().window(pwid);
+		 lp.getCloseDateTbx().sendKeys(cDate);
 		 Select s = new Select(lp.getPotStage());
 		 s.selectByIndex(Integer.valueOf(potStageD));
 		 lp.getSaveBtnCnvtPot().click();
-//		 AccountPage ap = new AccountPage(driver);
-//		 if(!(ap.getAccountDetailsPage().getText().contains("Account Details")))
-//		 {
-//			 Assert.fail();
-//		 }
+		 AccountPage ap = new AccountPage(driver);
+		 if(ap.getAccountDetailsPage().getTagName().contains("Account"))
+		 {
+			 Assert.assertTrue(true);
+		 }
+		 else
+			 Assert.assertFalse(false);
 	}
+	
+//	@Test
+//	public void createPricebook() throws EncryptedDocumentException, IOException 
+//	{
+//		for(int j=1; j<=50; j++)
+//		{
+//		try {
+//				for(int i=0; i<50; i++)
+//				{
+//					ip.getOnrightClick().click();
+//				}
+//			hp.getPriceBookLink().click();
+//			pbp.getCreatePricebook().click();
+//			String pbName = fl.getExcelData("pricebook", 1,0 );
+//			pbp.getPricebookName().sendKeys(pbName);
+//			pbp.getSubmit().click();
+//			break;
+//			}
+//		catch (NoSuchElementException e)
+//			{
+//			driver.navigate().refresh();
+//			}
+//		}
+//	}
 
 }

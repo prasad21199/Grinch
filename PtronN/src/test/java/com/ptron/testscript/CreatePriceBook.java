@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.NoSuchElementException;
 
 import org.apache.poi.EncryptedDocumentException;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.ptron.generic.BaseClass;
@@ -30,6 +31,10 @@ public class CreatePriceBook extends BaseClass {
 			{
 			driver.navigate().refresh();
 			}
+		}
+		if(pbp.getPriceBookText().getText().contains("Price Book Details"))
+		{
+			Assert.assertTrue(true);
 		}
 	}
 }

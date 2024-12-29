@@ -1,4 +1,4 @@
-package com.ptron.testscript;
+package com.ptron.testscript.e_e;
 
 import java.io.IOException;
 import java.util.List;
@@ -96,7 +96,7 @@ public class Camp_Potential extends BaseClass {
 		}
 	}
 	@Test (priority = 3)
-	public void convertTo() throws EncryptedDocumentException, IOException, InterruptedException
+	public void convertToPotential() throws EncryptedDocumentException, IOException, InterruptedException
 	{
 		for(int i=0; i<1000; i++)
 		{

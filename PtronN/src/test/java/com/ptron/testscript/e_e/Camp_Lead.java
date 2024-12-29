@@ -1,4 +1,4 @@
-package com.ptron.testscript;
+package com.ptron.testscript.e_e;
 
 import java.io.IOException;
 import java.util.NoSuchElementException;

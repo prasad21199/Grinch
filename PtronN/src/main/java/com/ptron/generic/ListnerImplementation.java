@@ -34,9 +34,9 @@ public class ListnerImplementation extends BaseClass implements ITestListener{
 		String timeStamp = LocalDateTime.now().toString().replace(':', '-');
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File src = ts.getScreenshotAs(OutputType.FILE);
-		File dest = new File("./errorshot/"+methodName+timeStamp+".png");
+		File dest = new File("./ScreenShot/"+methodName+timeStamp+".png");
 		try {
-				FileUtils.copyDirectory(src, dest);
+				FileUtils.copyFile(src, dest);
 			} 
 			catch (IOException e) 
 			{

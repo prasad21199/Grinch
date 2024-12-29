@@ -7,8 +7,8 @@
         <methods>
           <include name="createPricebook"/>
           <include name="closeBrowser"/>
-          <include name="login"/>
           <include name="logout"/>
+          <include name="login"/>
           <include name="openBrowser"/>
         </methods>
       </class> <!-- com.ptron.testscript.CreatePriceBook -->

@@ -14,6 +14,8 @@ public class PricebookPage {
 	private WebElement pricebookName;
 	@FindBy(xpath="(//input[@type='submit'])[3]")
 	private WebElement submit;
+	@FindBy(xpath = "//td[@class='title hline']")
+	private WebElement priceBookText;
 
 	public PricebookPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
@@ -21,6 +23,11 @@ public class PricebookPage {
 
 	public WebElement getScroll() {
 		return scroll;
+	}
+	
+
+	public WebElement getPriceBookText() {
+		return priceBookText;
 	}
 
 	public WebElement getCreatePricebook() {
