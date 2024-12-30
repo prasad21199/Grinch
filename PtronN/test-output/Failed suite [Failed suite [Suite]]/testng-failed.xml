@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Failed suite [Suite]]]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)(failed)(failed)">
+    <classes>
+      <class name="com.ptron.testscript.e_e.Camp_Potential">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="login"/>
+          <include name="logout"/>
+          <include name="convertToPotential"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- com.ptron.testscript.e_e.Camp_Potential -->
+      <class name="com.ptron.testscript.e_e.Vendor_PriceBook">
+        <methods>
+          <include name="createPricebook"/>
+          <include name="closeBrowser"/>
+          <include name="logout"/>
+          <include name="login"/>
+          <include name="createVendor"/>
+          <include name="openBrowser"/>
+          <include name="createProduct"/>
+        </methods>
+      </class> <!-- com.ptron.testscript.e_e.Vendor_PriceBook -->
+      <class name="com.ptron.testscript.e_e.Camp_Lead">
+        <methods>
+          <include name="createLead"/>
+          <include name="closeBrowser"/>
+          <include name="login"/>
+          <include name="logout"/>
+          <include name="openBrowser"/>
+          <include name="createCampagin"/>
+        </methods>
+      </class> <!-- com.ptron.testscript.e_e.Camp_Lead -->
+      <class name="com.ptron.testscript.e_e.Camp_Invoice">
+        <methods>
+          <include name="createLead"/>
+          <include name="closeBrowser"/>
+          <include name="createQuote"/>
+          <include name="login"/>
+          <include name="logout"/>
+          <include name="createCampagin"/>
+          <include name="openBrowser"/>
+          <include name="convertLeadToPotential"/>
+          <include name="createInvoice"/>
+        </methods>
+      </class> <!-- com.ptron.testscript.e_e.Camp_Invoice -->
+      <class name="com.ptron.testscript.e_e.Camp_Quotes">
+        <methods>
+          <include name="createLead"/>
+          <include name="closeBrowser"/>
+          <include name="convertLeadToPotential"/>
+          <include name="login"/>
+          <include name="logout"/>
+          <include name="openBrowser"/>
+          <include name="createCampagin"/>
+          <include name="createQuote"/>
+        </methods>
+      </class> <!-- com.ptron.testscript.e_e.Camp_Quotes -->
+    </classes>
+  </test> <!-- Test(failed)(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Failed suite [Suite]]] -->

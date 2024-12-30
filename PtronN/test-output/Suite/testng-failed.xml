@@ -3,56 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.ptron.testscript.e_e.Camp_Potential">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="logout"/>
-          <include name="login"/>
-          <include name="openBrowser"/>
-          <include name="convertToPotential"/>
-        </methods>
-      </class> <!-- com.ptron.testscript.e_e.Camp_Potential -->
-      <class name="com.ptron.testscript.e_e.Camp_Lead">
-        <methods>
-          <include name="createLead"/>
-          <include name="closeBrowser"/>
-          <include name="logout"/>
-          <include name="login"/>
-          <include name="openBrowser"/>
-          <include name="createCampagin"/>
-        </methods>
-      </class> <!-- com.ptron.testscript.e_e.Camp_Lead -->
-      <class name="com.ptron.testscript.e_e.Vendor_PriceBook">
-        <methods>
-          <include name="createPricebook"/>
-          <include name="closeBrowser"/>
-          <include name="logout"/>
-          <include name="login"/>
-          <include name="createVendor"/>
-          <include name="openBrowser"/>
-          <include name="createProduct"/>
-        </methods>
-      </class> <!-- com.ptron.testscript.e_e.Vendor_PriceBook -->
-      <class name="com.ptron.testscript.e_e.Camp_Quotes">
-        <methods>
-          <include name="createLead"/>
-          <include name="closeBrowser"/>
-          <include name="convertLeadToPotential"/>
-          <include name="login"/>
-          <include name="logout"/>
-          <include name="createCampagin"/>
-          <include name="openBrowser"/>
-          <include name="createQuote"/>
-        </methods>
-      </class> <!-- com.ptron.testscript.e_e.Camp_Quotes -->
       <class name="com.ptron.testscript.e_e.Camp_Invoice">
         <methods>
           <include name="createLead"/>
           <include name="closeBrowser"/>
           <include name="createQuote"/>
-          <include name="createCampagin"/>
-          <include name="logout"/>
           <include name="login"/>
+          <include name="logout"/>
           <include name="openBrowser"/>
           <include name="convertLeadToPotential"/>
           <include name="createInvoice"/>
